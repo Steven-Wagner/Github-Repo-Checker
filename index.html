@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Github Search Repo by User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header role="banner">
+        <h1>Repo Checker</h1>
+        <h2>Input a Github user name to see their public repositories</h2>
+    </header>
+    <main role="main">
+        <form>
+            <label for="userName">Github username</label>
+            <input type="text" id="userName" placeholder="Bob" required>
+            <input type="submit">
+        </form>
+        <section>
+            <ol class="results hidden">
+            </ol>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
